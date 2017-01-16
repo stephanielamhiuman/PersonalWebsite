@@ -1,4 +1,4 @@
-## Welcome to Stephanie's Page :sunny:
+## Welcome to Stephanie's Page 
 
 ### Markdown
 
