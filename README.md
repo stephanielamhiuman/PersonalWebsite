@@ -1,6 +1,8 @@
 ## Welcome to Stephanie's Page 
+[Link](http://stephanielamhiuman.github.io)
 
-[Link]stephanielamhiuman.github.io
+
+
 
 ### Markdown
 
