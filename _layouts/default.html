@@ -12,7 +12,6 @@
       .page-header {
       background-image:url("style/free-wallpaper-6.jpg");
       color: #466eb5;
-      text-shadow: 0px 0px 4px #ccccff;
       }
     </style>
   </head>
@@ -23,19 +22,29 @@
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
     </section>
 	  
-
+    <section id="downloads" class="clearfix">
+          {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
+         <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          {% endif %}
+	    {% if site.github.is_project_page %}
+          <a href="https://stephanielamhiuman.github.io/" id="view-on-github" class="button"><span>Home</span></a>
+	    {% else %}
+          <a href="https://stephanielamhiuman.github.io/" id="view-on-github" class="button"><span>Home</span></a>
+	    {% endif %}  
+    </section> 
+	  
     <section class="main-content">
       <h3>About me.</h3>
       <div class="section group">
-	<div class="col span_2_left">
-      <p>I am a 4th year applied statistics major at UC Davis and will be graduating in Spring 2017. I plan on pursuing a career in data science and I am also interested in an actuarial career. Inspired by the class I took, I decide to create this data science portfolio to keep track on my works and the progress of myself becoming a better data scientist.</p>
+      <p>Stephanie is a 4th year undergraduate applied statistics major at the University of California, Davis. She will be graduating in Spring 2017 and plan on pursuing a career in data science. She is also interested in an actuarial career and will be studying for the actuary exams(P and FM) after graduate in June. Inspired by the class she took, she decides to create this data science portfolio to keep track on her works and the progress of becoming a better data scientist.</p>
 	</div>
       </div>
 
       <h3>Interesting classes that I took:</h3>
 	<ol>
 		<li>STA 141A - Statistical Data Science (R Language)</li>
-		<li>STA 141B - Statistical Data Technologies (Python)</li>
+		<li>STA 141B - Statistical Data Technologies (Python & Jupyter Notebook)</li>
 		<li>STA 135 - Multivariate Data Analysis</li>
 		<li>STA 137 - Applied Time Series Analysis (R Language)</li>
 		<li>STA 138 - Analysis Categorical Data (SAS & R) </li>
@@ -67,10 +76,10 @@
 	
 	<h3>More:</h3>
 	 <ul>
-	  <small><a href="CV/CV.html">Resume</a></small>
-	  <small><a href="mailto:hmlam@ucdavis.edu">Email</a></small>
-	  <small><a href="https://www.linkedin.com/in/hiu-man-stephanie-lam-538795112/">Linkedin</a></small>
-	  <small><a href="https://www.github.com/stephanielamhiuman">Github repository</a></small>
+	  <li><small><a href="CV/CV.html">Resume</a></small></li>
+	  <li><small><a href="mailto:hmlam@ucdavis.edu">Email</a></small></li>
+	  <li><small><a href="https://www.linkedin.com/in/hiu-man-stephanie-lam-538795112/">Linkedin</a></small></li>
+	  <li><small><a href="https://www.github.com/stephanielamhiuman">Github repository</a></small></li>
 	</ul>
     </section>
   </body>
