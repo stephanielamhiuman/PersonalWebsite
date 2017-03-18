@@ -25,6 +25,7 @@
 	  
 	  
     <section class="main-content">
+	{% if site.github.is_project_page %}
       <h3>About me.</h3>
 	<blockquote>
       <div class="section group">
@@ -73,7 +74,9 @@
 	  <li><small><a href="https://www.linkedin.com/in/hiu-man-stephanie-lam-538795112/">Linkedin</a></small></li>
 	  <li><small><a href="https://www.github.com/stephanielamhiuman">Github repository</a></small></li>
 	</ul>
-	  
+	    {% else %}
+	   {{ content }}
+	    {% endif %}  
   	</section>	     
         <hr>
         <footer>
