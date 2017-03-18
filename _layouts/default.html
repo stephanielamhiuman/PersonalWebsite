@@ -20,28 +20,18 @@
     <section class="page-header">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-	{% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-	{% if site.github.is_project_page %}
-          <a href="https://stephanielamhiuman.github.io/" id="view-on-github" class="button"><span>Home</span></a>
-	    {% else %}
-          <a href="https://stephanielamhiuman.github.io/" id="view-on-github" class="button"><span>Home</span></a>
-	    {% endif %}  
-
+      <a href="stephanielamhiuman.github.io" class="btn">Home</a>
+      <a href="hmlam@ucdavis.edu" class="btn">Email</a>
     </section>
 	  
 	  
     <section class="main-content">
+      <blockquote>
       <h3>About me.</h3>
       <div class="section group">
       <p>Stephanie is a 4th year undergraduate applied statistics major at the University of California, Davis. She will be graduating in Spring 2017 and plan on pursuing a career in data science. She is also interested in an actuarial career and will be studying for the actuary exams(P and FM) after graduate in June. Inspired by the class she took, she decides to create this data science portfolio to keep track on her works and the progress of becoming a better data scientist.</p>
 	</div>
-      </div>
+      </blockquote>
 
       <h3>Interesting classes that I took:</h3>
 	<ol>
@@ -54,6 +44,7 @@
 		<li>ECS 010 - Intro to Programming (Python) </li>
 	</ol>
 	
+	<hr>
       <h3>Projects:</h3>
 	<div class="pubsec section group">
 	  <div class="col span_half">
@@ -74,7 +65,7 @@
 		<small> - analyzed and forecast the time models in the milk dataset by using R. <br/></small>
 		<small><a href="Projects/index.html" target="_self">Click here for more! #9754; </a></small>
 	</ul>
-	  
+	  <hr>
 	
 	<h3>More:</h3>
 	 <ul>
