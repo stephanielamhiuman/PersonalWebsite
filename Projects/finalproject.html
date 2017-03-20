@@ -19,27 +19,28 @@ title: Final Project
             <img src="../style/sf.png" alt="SFO" style="width:250px;height:180px;">
             <img src="../style/food.png" alt="Food" style="width:250px;height:180px;">
 	    
-	    <h3><strong><a name="Introduction"><span style="color: #DC143C">Introduction</span></a></strong></h3>
+	    <h2><strong><a name="Introduction"><span style="color: #DC143C">Introduction</span></a></strong></h2>
 	    	<p>The project on this page provides an overview of the final project we did for our class. This project is done by a group of 3 people: 
 			<a href="https://github.com/stephanielamhiuman">Stephanie (Hiu Man) Lam, </a>,
 			<a href="https://github.com/chloechen1995">Chloe (Jieyi) Chen, </a>
 			<a href="https://github.com/janetloyola">and Janet Loyola</a>
 	    	</p>
-		<br><p> With our passion of traving, we are interested in helping the others to discover the most outstanding places in California focusing on 
+		<p> With our passion of traveling, we are interested in helping the others to discover the most outstanding places in California focusing on 
 	    		only 3 categories:
-	    		<br><span style="color: #B22222"> hotels, restaurants, and landmarks. </span>
+	    		<br><span style="color: #B22222"> - hotels, restaurants, and landmarks. </span>
 			<br>Our goal of the project is to provide a travel guide for California visitors by showing them the best hotels, restaurants, and landmarks with 
 			the applications of web data processing, interactive data vistualization, natural language processing, and interactive user input using Python.
 	    	</p>
 	    	
-	    <h3><strong><a name="Data"><span style="color: #DC143C">Data Wrangling</span></a></strong></h3>
+	    <h2><strong><a name="Data"><span style="color: #DC143C">Data Wrangling</span></a></strong></h2>
 	    	<p>Extracted and collected data
 		from the <a href="https://www.yelp.com/developers/documentation/v3/business_search"><span style="color: #B22222">Yelp Search API</span></a> and
 		performed a web scraping from <a href="https://www.wikipedia.org/"><span style="color: #B22222">Wikipedia page</span></a>, we created a dataframe
 		with business and California cities information.
 		</p>
 		<p>Our final dataframe for the category restaurant: </p>
-		 <table class="table table-condensed">
+		<table>
+     		<thead>
   			<tr>
   			  <th>Categories</th>
   			  <th>City</th>
@@ -57,7 +58,8 @@ title: Final Project
    			 <th>Lat.</th>
    			 <th>Lon.</th>
   			</tr>
-			 
+		</thead>
+      		<tbody>
   			<tr>
     			<td>[[Burgers, burgers]]</td>
     			<td>Adelanto, CA</td>
@@ -76,88 +78,97 @@ title: Final Project
    			 <td>-117.409214</td>
  			 </tr>
 
-  <tr>
-    <td>[[[Tacos, tacos]]</td>
-    <td>Adelanto, CA</td>
-    <td>NaN</td>
-    <td>jds-tacos-adelanto-2</td>
-    <td>False</td>
-    <td>False</td>
-    <td>https://m.yelp.com/biz/jds-tacos-adelanto-2?ad...</td>
-    <td>Jds Tacos</td>
-    <td>5.0</td>
-    <td>1</td>
-    <td>Jds tacos coming soon on Friday we will be hav...</td>
-    <td>https://www.yelp.com/biz/jds-tacos-adelanto-2?...</td>
-    <td>31,765</td>
-    <td>34.582769</td>
-    <td>-117.409214</td>
-  </tr>
+ 			 <tr>
+ 			   <td>[[[Tacos, tacos]]</td>
+ 			   <td>Adelanto, CA</td>
+ 			   <td>NaN</td>
+  			  <td>jds-tacos-adelanto-2</td>
+  			  <td>False</td>
+  			  <td>False</td>
+   			   <td>https://m.yelp.com/biz/jds-tacos-adelanto-2?ad...</td>
+   			   <td>Jds Tacos</td>
+   			   <td>5.0</td>
+  			    <td>1</td>
+  			    <td>Jds tacos coming soon on Friday we will be hav...</td>
+  			    <td>https://www.yelp.com/biz/jds-tacos-adelanto-2?...</td>
+  			    <td>31,765</td>
+  			    <td>34.582769</td>
+  			    <td>-117.409214</td>
+ 			   </tr>
 
-  <tr>
-    <td>[Mexican, mexican]]</td>
-    <td>Adelanto, CA</td>
-    <td>+1-760-246-4751</td>
-    <td>miguelitos-family-restaurant-adelanto</td>
-    <td>False</td>
-    <td>False</td>
-    <td>https://m.yelp.com/biz/miguelitos-family-resta...</td>
-    <td>Miguelitos Family Restaurant</td>
-    <td>4.0</td>
-    <td>14</td>
-    <td>This is the place to come to after a night out...</td>
-    <td>https://www.yelp.com/biz/miguelitos-family-res...</td>
-    <td>31,765</td>
-    <td>34.582769</td>
-    <td>-117.409214</td>
-  </tr>
-  <tr>
-    <td>[[Thai, thai], [Chinese, chinese]]</td>
-    <td>Adelanto, CA</td>
-    <td>+1-760-246-8122</td>
-    <td>thai-siam-restaurant-adelanto</td>
-    <td>False</td>
-    <td>False</td>
-    <td>https://m.yelp.com/biz/thai-siam-restaurant-ad...</td>
-    <td>Thai-Siam Restaurant</td>
-    <td>4.5</td>
-    <td>42</td>
-    <td>So I wanted to listen to "In the Aeroplane Ove...</td>
-    <td>https://www.yelp.com/biz/thai-siam-restaurant-...</td>
-    <td>31,765</td>
-    <td>34.582769</td>
-    <td>-117.409214</td>
-  </tr>
-  </table>
+ 			   <tr>
+ 			     <td>[Mexican, mexican]]</td>
+ 			     <td>Adelanto, CA</td>
+  			    <td>+1-760-246-4751</td>
+  			    <td>miguelitos-family-restaurant-adelanto</td>
+  			    <td>False</td>
+  			    <td>False</td>
+  			    <td>https://m.yelp.com/biz/miguelitos-family-resta...</td>
+  			    <td>Miguelitos Family Restaurant</td>
+  			    <td>4.0</td>
+  			    <td>14</td>
+   			   <td>This is the place to come to after a night out...</td>
+  			    <td>https://www.yelp.com/biz/miguelitos-family-res...</td>
+   			   <td>31,765</td>
+   			   <td>34.582769</td>
+   			   <td>-117.409214</td>
+ 			   </tr>
+ 			   <tr>
+  			    <td>[[Thai, thai], [Chinese, chinese]]</td>
+  			    <td>Adelanto, CA</td>
+  			    <td>+1-760-246-8122</td>
+  			    <td>thai-siam-restaurant-adelanto</td>
+  			    <td>False</td>
+ 			     <td>False</td>
+ 			     <td>https://m.yelp.com/biz/thai-siam-restaurant-ad...</td>
+ 			     <td>Thai-Siam Restaurant</td>
+ 			     <td>4.5</td>
+ 			     <td>42</td>
+ 			     <td>So I wanted to listen to "In the Aeroplane Ove...</td>
+ 			     <td>https://www.yelp.com/biz/thai-siam-restaurant-...</td>
+ 			     <td>31,765</td>
+ 			     <td>34.582769</td>
+ 			     <td>-117.409214</td>
+ 			   </tr>
+ 		</tbody>
+ 		</table>
+	    
 	    <h3><strong><a name="Analysis"><span style="color: #DC143C">Analysis and Vistualization</span></a></strong></h3>
 		    <p> Since we want our users to be able to track the different categories for their own personal needs, we used interactive plots to give the 
 			    user a richer information experience. 
 		    </p>
 		    <div>
-    			<a href="https://plot.ly/~stephanielam/50/?share_key=cOiKyLK49MCvA7nM6d4T7X" target="_blank" title="Top 10 most frequent category of Restaurant" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/50.png?share_key=cOiKyLK49MCvA7nM6d4T7X" alt="Top 10 most frequent category of Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    			<a href="https://plot.ly/~stephanielam/50/?share_key=cOiKyLK49MCvA7nM6d4T7X" target="_blank" title="Top 10 most frequent category of Restaurant" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/50.png?share_key=cOiKyLK49MCvA7nM6d4T7X" alt="Top 10 most frequent category of Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
    		 	<script data-plotly="stephanielam:50" sharekey-plotly="cOiKyLK49MCvA7nM6d4T7X" src="https://plot.ly/embed.js" async></script>
 		    </div>
+	    	    <small> From this bar plot, we can see that Mexican food is the most popular cuisine.</small>
+		    <br><small>Now, we need a plot to see how these categories are distributed in different ratings.</small>
 		    <br>
 		    <div>
-   			 <a href="https://plot.ly/~stephanielam/88/?share_key=48vMzvfIe6iaoV3nMWWqsa" target="_blank" title="Rating stars distribution (by categeory) for Restaurant" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/88.png?share_key=48vMzvfIe6iaoV3nMWWqsa" alt="Rating stars distribution (by categeory) for Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   			 <a href="https://plot.ly/~stephanielam/88/?share_key=48vMzvfIe6iaoV3nMWWqsa" target="_blank" title="Rating stars distribution (by categeory) for Restaurant" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/88.png?share_key=48vMzvfIe6iaoV3nMWWqsa" alt="Rating stars distribution (by categeory) for Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
    			 <script data-plotly="stephanielam:88" sharekey-plotly="48vMzvfIe6iaoV3nMWWqsa" src="https://plot.ly/embed.js" async></script>
 		    </div>
+	    		<small>We see that most of the restaurants have 4 stars rating or higher. Hence, we can tell that CA has pretty posh restaurants overall. </small>
 		    <br>
 		    <div>
-   			 <a href="https://plot.ly/~stephanielam/54/?share_key=PKHXLPn4XduN79K2swuTK4" target="_blank" title="Restaurant average rating by city" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/54.png?share_key=PKHXLPn4XduN79K2swuTK4" alt="Restaurant average rating by city" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   			 <a href="https://plot.ly/~stephanielam/54/?share_key=PKHXLPn4XduN79K2swuTK4" target="_blank" title="Restaurant average rating by city" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/54.png?share_key=PKHXLPn4XduN79K2swuTK4" alt="Restaurant average rating by city" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
   			  <script data-plotly="stephanielam:54" sharekey-plotly="PKHXLPn4XduN79K2swuTK4" src="https://plot.ly/embed.js" async></script>
 		    </div>
+	    		<small> In this map,The bigger dots indicate higher average review count. We see that most of the restaurants in different cities are between 4 and 4.5 stars. There is currently no city that has a average rating higher than 4.5.</small>
 			<br>
 			<div>
-   			 <a href="https://plot.ly/~stephanielam/92/?share_key=AfHJE5iyESkFVLzfBsUQcy" target="_blank" title="Top 5 restaurant by category" style="display: block; text-align: right;"><img src="https://plot.ly/~stephanielam/92.png?share_key=AfHJE5iyESkFVLzfBsUQcy" alt="Top 5 restaurant by category" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   			 <a href="https://plot.ly/~stephanielam/92/?share_key=AfHJE5iyESkFVLzfBsUQcy" target="_blank" title="Top 5 restaurant by category" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/92.png?share_key=AfHJE5iyESkFVLzfBsUQcy" alt="Top 5 restaurant by category" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
  			   <script data-plotly="stephanielam:92" sharekey-plotly="AfHJE5iyESkFVLzfBsUQcy" src="https://plot.ly/embed.js" async></script>
 		    	</div>
+	    		<small>This map shows the top 3 restaurants by cuisine after we find the top 3 restaurants of each particular cuisine.</small>
+	    
 
 
-		    
-	<h3><a name="ReviewAnalysis">Review Analysis</a></h3>
-	<h3><a name="User Input">User Input</a></h3>  
-	<h3><a name="Next Step">Next step</a></h3>
+	<h2><strong><a name="ReviewAnalysis"><span style="color: #DC143C">Review Analysis</span></a></strong></h2>
+	    
+	<h2><strong><a name="User Input"><span style="color: #DC143C">User Input</span></a></strong></h2>
+	<h2><strong><a name="Next Step"><span style="color: #DC143C">Next Step</span></a></strong></h2>
+	<h2><strong><a name="Code"><span style="color: #DC143C">Code</span></a></strong></h2>
 		    
   </section>
 </div>
