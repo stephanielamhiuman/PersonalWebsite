@@ -9,15 +9,12 @@ title: Final Project
 	    <a href="#Introduction">Introduction</a>
 	    <br><a href="#Data">I. Data Wrangling</a>
 	    <br><a href="#Analysis">II. Analysis and Vistualization</a>
-	    <br><small><a href="#Restaurants">      - Restaurant</a></small>
-	    <br><small><a href="#Hotels">      - Hotels</a></small>
-	    <br><small><a href="#Landmarks">      - Landmarks</a></small>
 	    <br><a href="#ReviewAnalysis">III. Review Analysis</a>
 	    <br><a href="#User Input">IV. Interactive User Input</a>
-	    <br><a href="#Next Step">Next Step</a>
+	    <br><a href="#Next Step">Conclusion & Next Step</a>
 	    <br><a href="#Codes">Codes</a>
 	    <br>
-	    <br><h1 align="center"><strong><span style="color: #00008B">STATS 141B FINAL PROJECT - CALIFORNIA TRAVEL GUIDE</span></strong></h1>
+	    <br><h1 align="center"><strong><span style="color: #DC143C">STATS 141B FINAL PROJECT <br> CALIFORNIA TRAVEL GUIDE</span></strong></h1>
 	    <br>
 	    <br>
 	    <img src="../style/hotel.png" alt="Hotel" style="width:260px;height:190px;">
@@ -26,7 +23,7 @@ title: Final Project
 	    
 	    <h2><strong><a name="Introduction"><span style="color: #DC143C">Introduction</span></a></strong></h2>
 	    	<p>The project on this page provides an overview of the final project we did for our class. This project is done by a group of 3 students: 
-			<a href="https://github.com/stephanielamhiuman">Stephanie (Hiu Man) Lam, </a>,
+			<a href="https://github.com/stephanielamhiuman">Stephanie (Hiu Man) Lam, </a>
 			<a href="https://github.com/chloechen1995">Chloe (Jieyi) Chen, </a>
 			<a href="https://github.com/janetloyola">and Janet Loyola</a>
 		   <br> We divided our project into 4 parts, including data wrangling, anaylsis and vistualization, review analysis, and interactive user input.
@@ -40,7 +37,7 @@ title: Final Project
 			the applications of web data processing, interactive data vistualization, natural language processing, and interactive user input using Python.
 	    	</p>
 	    	
-	    <h2><strong><a name="Data"><span style="color: #DC143C">Data Wrangling</span></a></strong></h2>
+	    <h2><strong><a name="Data"><span style="color: #DC143C">I. Data Wrangling</span></a></strong></h2>
 	    	<p>Extracted and collected data
 		from the <a href="https://www.yelp.com/developers/documentation/v3/business_search"><span style="color: #B22222">Yelp Search API</span></a> and
 		performed a web scraping from <a href="https://www.wikipedia.org/"><span style="color: #B22222">Wikipedia page</span></a>, we created a dataframe
@@ -142,12 +139,15 @@ title: Final Project
  		</tbody>
  		</table>
 	    </small>
-	    <h2><strong><a name="Analysis"><span style="color: #DC143C">Analysis and Vistualization</span></a></strong></h2>
+	    <h2><strong><a name="Analysis"><span style="color: #DC143C">II. Analysis and Vistualization</span></a></strong></h2>
 		    <p> Since we want our users to be able to track the different categories for their own personal needs, we used interactive plots to give the 
-			    user a richer information experience. 
-		    </p>
+			    user a richer information experience.
+			</p>
+		<small><li><a href="#Restaurants">- Restaurant</a></li></small>
+	    	<small><li><a href="#Hotels">- Hotels</a></li></small>
+	   	<small><li><a href="#Landmarks">- Landmarks</a></li>></small>
 	    
-	    	    <h3 align="center"><a name="Restaurants"><span style="color: #DC143C">The Restaurant Category</span></a></h3>
+	    	    <h3><a name="Restaurants"><span style="color: #DC143C">The Restaurant Category</span></a></h3>
 		    
 	    	    <div>
     			<a href="https://plot.ly/~stephanielam/50/?share_key=cOiKyLK49MCvA7nM6d4T7X" target="_blank" title="Top 10 most frequent category of Restaurant" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/50.png?share_key=cOiKyLK49MCvA7nM6d4T7X" alt="Top 10 most frequent category of Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
@@ -176,7 +176,7 @@ title: Final Project
 		    	</div>
 	    		<small>Most of the top 3 restaurants are located near San Francisco and the Los Angeles to San Diego area.</small>
 	    		
-		    <h3 align="center"><a name="Hotels"><span style="color: #DC143C">The Hotel Category</span></a></h3>
+		    <h3><a name="Hotels"><span style="color: #DC143C">The Hotel Category</span></a></h3>
 	    		<div>
    				 <a href="https://plot.ly/~stephanielam/60/?share_key=7ay2cQ3TvYvKbg5Nj7RD4e" target="_blank" title="Top 10 most frequent category of Hotels" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/60.png?share_key=7ay2cQ3TvYvKbg5Nj7RD4e" alt="Top 10 most frequent category of Hotels" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     				<script data-plotly="stephanielam:60" sharekey-plotly="7ay2cQ3TvYvKbg5Nj7RD4e" src="https://plot.ly/embed.js" async></script>
@@ -201,7 +201,7 @@ title: Final Project
 			</div>
 	    		<small>We grouped the hotels into different categories by finding the pattern within their name such as Hotel, Motel, or Inn. Same as the restaurant category, the map shows that most top hotels are located near San Francisco and LA-SD area. </small>
 	    	
-	    	<h3 align="center"><a name="Landmarks"><span style="color: #DC143C">The Landmarks Category</span></a></h3>
+	    	<h3><a name="Landmarks"><span style="color: #DC143C">The Landmarks Category</span></a></h3>
 	    		<div>
    				 <a href="https://plot.ly/~stephanielam/70/?share_key=aB3IawLiB2oe0hz17zZrQ1" target="_blank" title="Top 10 most frequent category of Landmarks" style="display: block; text-align: center;"><img src="https://plot.ly/~stephanielam/70.png?share_key=aB3IawLiB2oe0hz17zZrQ1" alt="Top 10 most frequent category of Landmarks" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
    				 <script data-plotly="stephanielam:70" sharekey-plotly="aB3IawLiB2oe0hz17zZrQ1" src="https://plot.ly/embed.js" async></script>
@@ -224,32 +224,32 @@ title: Final Project
 	    		<small>Different than the restaurant and hotel category, out of the 10 top landmarks, half of them are located in San Francisco while Los Angeles does not have any.</small>
 
 
-	<h2><strong><a name="ReviewAnalysis"><span style="color: #DC143C">Review Analysis</span></a></strong></h2>
+	<h2><strong><a name="ReviewAnalysis"><span style="color: #DC143C">III. Review Analysis</span></a></strong></h2>
 	    <p>By using natural language processing, we analyzed the reviews from the Yelp API and find the common words that are used in the review by analyzing the best rated nearby restaurants, hotels, landmarks for all the cities in California. The results are shown below: </p>
 	
-	    <p>For restaurants: </p>  
+	    <p><span style="color: #FF5595"> For restaurants: </span></p>  
 		<img src="../style/part4_rest.png" alt="Number of counts of most occurring words in restaurants" style="width:304px;height:228px;">
 		<img src="../style/part4_restb.png" alt="Most commonly occurring words in restaurants" style="width:304px;height:228px;">
 		<small><li>The restaurants with higher rating tend to have greater food quality, more friendly customer service and great time management</li>
          	      <li>Chicken seems to be popular in the high rated restaurants.</li>
 	    	</small>
 	    
-	     <p>For Hotels: </p>  
+	    <p><span style="color: #FF5595">For Hotels: </span></p>  
 	    	<img src="../style/part4_hotel.png" alt="Number of counts of most occurring wordsin hotels" style="width:304px;height:228px;">
 		<img src="../style/part4_hotelb.png" alt="Most commonly occurring words in hotels" style="width:304px;height:228px;">
 		<small><li>The hotels with higher ratings tends to provide a cleaner environment, and more friendly customer service.</li>
         		<li>The customers also discuss the breakfast quality more often than other meals.</li>
 	    	</small>
 	    
-	    <p>For Landmarks: </p>  
+	    <p><span style="color: #FF5595">For Landmarks: </span></p>  
 	  	  <img src="../style/part4_landmarks.png" alt="Number of counts of most occurring words in landmarks" style="width:304px;height:228px;">
 		  <img src="../style/part4_landmarksb.png" alt="Most commonly occurring words in landmarks" style="width:304px;height:228px;">
 		  <small><li>The landmarks with higher ratings tends to have a great and beautiful environment, and an amazing view.</li>
       			  <li>Some examples of landmarks are parks and historic landmarks.</li>
 	    	  </small>
 	    
-	<h2><strong><a name="User Input"><span style="color: #DC143C">User Input</span></a></strong></h2>
-	    <p>With the application of interactive user input functions, we will try to provide a basic info of the city and best recommendations of restaurants, hotels and landmarks to the user. Below is the sample results we got with our input functions </p>
+	<h2><strong><a name="User Input"><span style="color: #DC143C">IV. Interactive User Input</span></a></strong></h2>
+	    <p>With the application of interactive user input functions, we will try to provide a basic info of the city and best recommendations of restaurants, hotels and landmarks to the user by extracting informations from the Wikipedia. Below is the sample results we got with our input functions: </p>
 	    
 	    <small><strong>Sample User Input: </strong></small>
 	    <pre><code><strong>Please enter the city that you want to visit: </strong>san fransicso</code></pre>
@@ -302,7 +302,6 @@ title: Final Project
 	    <pre><code><strong>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks: </strong> restaurants
 	    <br><strong>What is your favorite kinds of food? </strong> chinese
 	    <br><strong>What is your preferred range of rating for restaurants?</strong> 1,4 </code></pre>
-	    <br>
 	    <small><p><strong>Sample Ouput: </strong></p></small>
 	    <pre><code>You enter City: San Francisco, CA, Restaurant Category: Chinese, Lower_bound Rating: 1, Upper_bound Rating: 4 <br>We are sorry. We can not find a restaurant that meets your criterias in our database. Please try a different kinds of food or rating. But first, let's look at the TOP 5 alternatives that we find.</code></pre>
 	   
@@ -373,7 +372,8 @@ title: Final Project
 	   
 	    
 	    <br>
-	<h2><strong><a name="Next Step"><span style="color: #DC143C">Next Step</span></a></strong></h2>
+	    
+	<h2><strong><a name="Next Step"><span style="color: #DC143C">Conclusion & Next Step</span></a></strong></h2>
 	    <p> Our next step of our travel guide would be creating a server-side framework like flask to create a website that could actually get the user inputs and display corresponding 
 		    outputs and plots relative to whatever the users need.</p>
 		    
@@ -384,7 +384,8 @@ title: Final Project
 	    <li><a href="../Projects/Part+II_Query+Database (1).html" target="_self"> Part II: Analysis and Vistualization</a></li>
 	    <li><a href="../Projects/" target="_self"> Part III: Review Analysis</a></li>
 	    <li><a href="../Projects/" target="_self"> Part IV: Interactive User Input</a></li>
-	    
+		    
+	    <br><a href="https://github.com/chloechen1995/STA-141B-Project.github.io">Project Github Repository</a>
   </section>
 </div>
 	   
