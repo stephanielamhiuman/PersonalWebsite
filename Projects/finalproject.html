@@ -13,6 +13,7 @@ title: Final Project
 	    <br><a href="#Next Step">Next Step</a>
 	    <br><a href="#Codes">Codes</a>
 	    <br>
+	    <br><h1><strong><span style="color: #00008B">STATS 141B FINAL PROJECT</span></strong></h1>
 	    <br>
 	    <br>
 	    <img src="../style/hotel.png" alt="Hotel" style="width:260px;height:190px;">
@@ -28,7 +29,8 @@ title: Final Project
 		<p> With our passion of traveling, we are interested in helping the others to discover the most outstanding places in California focusing on 
 	    		only 3 categories:
 	    		<br><span style="color: #B22222"> - hotels, restaurants, and landmarks. </span>
-			<br><br>Our goal of the project is to provide a travel guide for California visitors by showing them the best hotels, restaurants, and landmarks with 
+			<br>
+			<br>Our goal of the project is to provide a travel guide for California visitors by showing them the best hotels, restaurants, and landmarks with 
 			the applications of web data processing, interactive data vistualization, natural language processing, and interactive user input using Python.
 	    	</p>
 	    	
@@ -38,7 +40,7 @@ title: Final Project
 		performed a web scraping from <a href="https://www.wikipedia.org/"><span style="color: #B22222">Wikipedia page</span></a>, we created a dataframe
 		with business and California cities information.
 		</p>
-		<p>Our final dataframe for the category restaurant: </p>
+		<p>The head of our final dataframe for the category restaurant: </p>
 	<small>	
 	    <table>
      		<thead>
@@ -72,8 +74,8 @@ title: Final Project
    			 <td>Bravo Burgers</td>
    			 <td>2.5</td>
    			 <td>37</td>
-   			 <td>We had dinner at Bravo Burgers tonight. I orde...</td>
-   			 <td>https://www.yelp.com/biz/bravo-burgers-adelant...</td>
+   			 <td>We had dinner at Bravo Burgers tonight...</td>
+   			 <td>https://www.yelp.com/biz/bravo-burgers-adel...</td>
    			 <td>31,765</td>
    			 <td>34.582769</td>
    			 <td>-117.409214</td>
@@ -90,7 +92,7 @@ title: Final Project
    			   <td>Jds Tacos</td>
    			   <td>5.0</td>
   			    <td>1</td>
-  			    <td>Jds tacos coming soon on Friday we will be hav...</td>
+  			    <td>Jds tacos coming soon on Friday we...</td>
   			    <td>https://www.yelp.com/biz/jds-tacos-adelanto-2?...</td>
   			    <td>31,765</td>
   			    <td>34.582769</td>
@@ -108,7 +110,7 @@ title: Final Project
   			    <td>Miguelitos Family Restaurant</td>
   			    <td>4.0</td>
   			    <td>14</td>
-   			   <td>This is the place to come to after a night out...</td>
+   			   <td>This is the place to come after a night...</td>
   			    <td>https://www.yelp.com/biz/miguelitos-family-res...</td>
    			   <td>31,765</td>
    			   <td>34.582769</td>
@@ -125,7 +127,7 @@ title: Final Project
  			     <td>Thai-Siam Restaurant</td>
  			     <td>4.5</td>
  			     <td>42</td>
- 			     <td>So I wanted to listen to "In the Aeroplane Ove...</td>
+ 			     <td>So I wanted to listen to "In the Aero...</td>
  			     <td>https://www.yelp.com/biz/thai-siam-restaurant-...</td>
  			     <td>31,765</td>
  			     <td>34.582769</td>
@@ -134,7 +136,7 @@ title: Final Project
  		</tbody>
  		</table>
 	    </small>
-	    <h3><strong><a name="Analysis"><span style="color: #DC143C">Analysis and Vistualization</span></a></strong></h3>
+	    <h2><strong><a name="Analysis"><span style="color: #DC143C">Analysis and Vistualization</span></a></strong></h2>
 		    <p> Since we want our users to be able to track the different categories for their own personal needs, we used interactive plots to give the 
 			    user a richer information experience. 
 		    </p>
@@ -166,8 +168,23 @@ title: Final Project
 
 
 	<h2><strong><a name="ReviewAnalysis"><span style="color: #DC143C">Review Analysis</span></a></strong></h2>
-	    
+	    <p>By using natural language processing, we analyzed the reviews from the Yelp API and find the common words that are used in the review. The results are shown below: </p>
+	
 	<h2><strong><a name="User Input"><span style="color: #DC143C">User Input</span></a></strong></h2>
+	    
+	    <p><strong>Sample User Input: </strong></p>
+	    <br><p>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks: </p>
+	     <pre><code>restaurants</code></pre>
+	    <p>What is your favorite kinds of food?  </p>
+	     <pre><code>chinese</code></pre>
+	    <p>What is your preferred range of rating for restaurants?   </p>
+	     <pre><code>1,4</code></pre>
+	    <br>
+	    <p><strong>Sample Ouput: </strong></p>
+	    <pre><code>You enter City: San Francisco, CA, Restaurant Category: Chinese, Lower_bound Rating: 1, Upper_bound Rating: 4 
+	    <br> We are sorry. We can not find a restaurant that meets your criterias in our database. Please try a different kinds of food or rating. But first, let's look at the TOP 5 alternatives that we find.</code></pre>
+	    
+	    <br>
 	<h2><strong><a name="Next Step"><span style="color: #DC143C">Next Step</span></a></strong></h2>
 	<h2><strong><a name="Code"><span style="color: #DC143C">Code</span></a></strong></h2>
 		    
