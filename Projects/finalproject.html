@@ -250,7 +250,7 @@ title: Final Project
 	    
 	<h2><strong><a name="User Input"><span style="color: #DC143C">User Input</span></a></strong></h2>
 	    <small><strong>Sample User Input: </strong></small>
-	    <pre><code>Please enter the city that you want to visit: san fransicso
+	    <pre><code><strong>Please enter the city that you want to visit: san fransicso<strong>
 	    </code></pre>
 	    <small><strong>Sample User Output: </strong></small>
 	    <pre><code>Welcome to the city of San Francisco! We are excited to provide you an ideal travel guide to help you explore this wonderful city!
@@ -258,7 +258,7 @@ title: Final Project
 	    <br>San Francisco (SF) (/sæn frənˈsɪskoʊ/, Spanish for Saint Francis; Spanish: [san fran.ˈθis.ko]), officially the City and County of San Francisco, is the cultural, commercial, and financial center of Northern California. It is the birthplace of the United Nations.[23][24][25] Located at the north end of the San Francisco Peninsula, San Francisco is about 47.9 square miles (124 km2)[17] in area, making it the smallest county—and the only consolidated city-county[26]—within the state of California. With a density of about 18,451 people per square mile (7,124 people per km2), San Francisco is the most densely settled large city (population greater than 200,000) in California and the second-most densely populated major city in the United States after New York City.[27] San Francisco is the fourth-most populous city in California, after Los Angeles, San Diego, and San Jose, and the 13th-most populous city in the United States—with a census-estimated 2015 population of 864,816.[20] The city and its surrounding areas are known as the San Francisco Bay Area, and are a part of the larger OMB-designated San Jose-San Francisco-Oakland combined statistical area, the fifth most populous in the nation with an estimated population of 8.7 million.
 	    </code></pre>
 	    
-	    <table>
+	    <small><table>
      		<thead>
   			<tr>
 			 <th>info</th>
@@ -295,16 +295,20 @@ title: Final Project
  			   </tr>
  		</tbody>
  		</table>
-	    
-	    <pre><code>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks: restaurants</code></pre>
-	    <pre><code>What is your favorite kinds of food? chinese</code></pre>
-	    <pre><code>What is your preferred range of rating for restaurants? 1,4</code></pre>
+	    </small>
+	    <pre><code><strong>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks: </strong>
+	    <br>restaurants
+	    <br><strong>What is your favorite kinds of food? </strong>
+	    <br>chinese
+	    <br><strong>What is your preferred range of rating for restaurants?</strong>
+	    <br>1,4
+	    </code></pre>
 	    <br>
 	    <small><p><strong>Sample Ouput: </strong></p></small>
 	    <pre><code>You enter City: San Francisco, CA, Restaurant Category: Chinese, Lower_bound Rating: 1, Upper_bound Rating: 4 
 	    <br>We are sorry. We can not find a restaurant that meets your criterias in our database. Please try a different kinds of food or rating. But first, let's look at the TOP 5 alternatives that we find.</code></pre>
 	    
-	    <table>
+	    <small><table>
      		<thead>
   			<tr>
   			  <th>categories</th>
@@ -367,19 +371,21 @@ title: Final Project
  			 </tr>
 			
  		</tbody>
- 		</table>
+		    </table></small>
 	    
-	    <pre><code>Are you satisfied with the results? 
+	    <pre><code><strong>Are you satisfied with the results? </strong>
 	    <br>no
 	    <br>Ok, let's try again.
 	    </code></pre>
-	    <pre><code>Please answer the following questions so that we can recommend the best restaurants, hotels and landmarks to you.
-			<br>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks
+	    <pre><code><strong>Please answer the following questions so that we can recommend the best restaurants, hotels and landmarks to you.
+			<br>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks</strong>
 			<br>hotels
-			<br>What kind of hotel do you prefer to stay in? For example, inns, hotels or resorts? 
+			<br><strong>What kind of hotel do you prefer to stay in? For example, inns, hotels or resorts? </strong>
 			<br>resorts
-			<br>What is your preferred range of rating for hotels? 
+			<br><strong>What is your preferred range of rating for hotels? </strong>
 			<br>1, 4
+	    </code></pre>
+	    <pre><code>
 			<br>You enter City: San Francisco, CA, Category: Resort, Lower_bound rating: 1, Upper_bound rating: 4
 
 			<br>We are sorry. We can not find a result that meets your criterias in our database. Please try a different input or rating. But first, let's look at the TOP 5 alternatives that we find.
