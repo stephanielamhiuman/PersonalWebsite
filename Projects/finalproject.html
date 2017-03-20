@@ -15,8 +15,11 @@ title: Final Project
 	    <br>
 	    <br>
 	    <br>
+	    <img src="../style/hotel.png" alt="Hotel" style="width:304px;height:228px;">
+            <img src="../style/sf.png" alt="SFO" style="width:304px;height:228px;">
+            <img src="../style/food.png" alt="Food" style="width:304px;height:228px;">
 	    
-	    <h3><a name="Introduction">Introduction</a></h3>
+	    <h3><strong><a name="Introduction"><span style="color: #DC143C">Introduction</span></a></strong></h3>
 	    	<p>The project on this page provides an overview of the final project we did for our class. This project is done by a group of 3 people: 
 			<a href="https://github.com/stephanielamhiuman">Stephanie (Hiu Man) Lam, </a>,
 			<a href="https://github.com/chloechen1995">Chloe (Jieyi) Chen, </a>
@@ -25,29 +28,18 @@ title: Final Project
 		<br><p> With our passion of traving, we are interested in helping the others to discover the most outstanding places in California focusing on 
 	    		only 3 categories:
 	    		<br><span style="color: #B22222"> hotels, restaurants, and landmarks. </span>
-			Our goal of the project is to provide a travel guide for California visitors by showing them the best hotels, restaurants, and landmarks with 
+			<br>Our goal of the project is to provide a travel guide for California visitors by showing them the best hotels, restaurants, and landmarks with 
 			the applications of web data processing, interactive data vistualization, natural language processing, and interactive user input using Python.
-			<img src="../style/hotel.png" alt="Hotel" style="width:304px;height:228px;">
-               		<img src="../style/sf.png" alt="SFO" style="width:304px;height:228px;">
-                	<img src="../style/food.png" alt="Food" style="width:304px;height:228px;">
 	    	</p>
-	    		<ul class="list-unstyled">
-                   		<li>Classy hotel!</li>
-                	</ul>
-               		<ul class="list-unstyled">
-                    		<li>Beautiful landmarks!</li>
-                	</ul>
-                	<ul class="list-unstyled">
-                    		<li>Yummy food!</li>
 	    	
-	    <h3><a name="Data">Data Wrangling</a></h3>
+	    <h3><strong><a name="Data"><span style="color: #DC143C">Data Wrangling</span></a></strong></h3>
 	    	<p>Extracted and collected data
 		from the <a href="https://www.yelp.com/developers/documentation/v3/business_search"><span style="color: #4682B4">Yelp Search API</span></a> and
 		performed a web scraping from <a href="https://www.wikipedia.org/"><span style="color: #4682B4">Wikipedia page</span></a>, we created a dataframe
 		with business and California cities information.
 		</p>
-		<p>Our final dataframe: </p>
-		 <table>
+		<p>Our final dataframe for the category <dt>restaurant</dt>: </p>
+		 <table width="50%">
   			<tr>
   			  <th>Categories</th>
   			  <th>City</th>
@@ -137,28 +129,25 @@ title: Final Project
     <td>-117.409214</td>
   </tr>
   </table>
-	    
-	    <h3><a name="Analysis">Analysis and Vistualization<h3>
+	    <h3><strong><a name="Analysis"><span style="color: #DC143C">Analysis and Vistualization</span></a><h3>
 		    <p> Since we want our users to be able to track the different categories for their own personal needs, we used interactive plots to give the 
 			    user a richer information experience. 
 		    </p>
 		    <div>
-    			<a href="https://plot.ly/~stephanielam/50/?share_key=cOiKyLK49MCvA7nM6d4T7X" target="_blank" title="Top 10 most frequent category of Restaurant" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/50.png?share_key=cOiKyLK49MCvA7nM6d4T7X" alt="Top 10 most frequent category of Restaurant" style="max-width: 100%;width: 300px;"  width="300" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    			<a href="https://plot.ly/~stephanielam/50/?share_key=cOiKyLK49MCvA7nM6d4T7X" target="_blank" title="Top 10 most frequent category of Restaurant" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/50.png?share_key=cOiKyLK49MCvA7nM6d4T7X" alt="Top 10 most frequent category of Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
    		 	<script data-plotly="stephanielam:50" sharekey-plotly="cOiKyLK49MCvA7nM6d4T7X" src="https://plot.ly/embed.js" async></script>
 		    </div>
 		    <br>
 		    <div>
-   			 <a href="https://plot.ly/~stephanielam/88/?share_key=48vMzvfIe6iaoV3nMWWqsa" target="_blank" title="Rating stars distribution (by categeory) for Restaurant" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/88.png?share_key=48vMzvfIe6iaoV3nMWWqsa" alt="Rating stars distribution (by categeory) for Restaurant" style="max-width: 100%;width: 300px;"  width="300" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   			 <a href="https://plot.ly/~stephanielam/88/?share_key=48vMzvfIe6iaoV3nMWWqsa" target="_blank" title="Rating stars distribution (by categeory) for Restaurant" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/88.png?share_key=48vMzvfIe6iaoV3nMWWqsa" alt="Rating stars distribution (by categeory) for Restaurant" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
    			 <script data-plotly="stephanielam:88" sharekey-plotly="48vMzvfIe6iaoV3nMWWqsa" src="https://plot.ly/embed.js" async></script>
 		    </div>
 		    <br>
 		    <div>
-   			 <a href="https://plot.ly/~stephanielam/54/?share_key=PKHXLPn4XduN79K2swuTK4" target="_blank" title="Restaurant average rating by city" style="display: block; text-align: right;"><img src="https://plot.ly/~stephanielam/54.png?share_key=PKHXLPn4XduN79K2swuTK4" alt="Restaurant average rating by city" style="max-width: 100%;width: 300px;"  width="300" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   			 <a href="https://plot.ly/~stephanielam/54/?share_key=PKHXLPn4XduN79K2swuTK4" target="_blank" title="Restaurant average rating by city" style="display: block; text-align: left;"><img src="https://plot.ly/~stephanielam/54.png?share_key=PKHXLPn4XduN79K2swuTK4" alt="Restaurant average rating by city" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
   			  <script data-plotly="stephanielam:54" sharekey-plotly="PKHXLPn4XduN79K2swuTK4" src="https://plot.ly/embed.js" async></script>
-		    </div>
 		    <br>
-		    <div>
-   			 <a href="https://plot.ly/~stephanielam/92/?share_key=AfHJE5iyESkFVLzfBsUQcy" target="_blank" title="Top 5 restaurant by category" style="display: block; text-align: right;"><img src="https://plot.ly/~stephanielam/92.png?share_key=AfHJE5iyESkFVLzfBsUQcy" alt="Top 5 restaurant by category" style="max-width: 100%;width: 300px;"  width="300" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   			 <a href="https://plot.ly/~stephanielam/92/?share_key=AfHJE5iyESkFVLzfBsUQcy" target="_blank" title="Top 5 restaurant by category" style="display: block; text-align: right;"><img src="https://plot.ly/~stephanielam/92.png?share_key=AfHJE5iyESkFVLzfBsUQcy" alt="Top 5 restaurant by category" style="max-width: 100%;width: 150px;"  width="150" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
  			   <script data-plotly="stephanielam:92" sharekey-plotly="AfHJE5iyESkFVLzfBsUQcy" src="https://plot.ly/embed.js" async></script>
 		    </div>
 
