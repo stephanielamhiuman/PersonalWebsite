@@ -22,19 +22,17 @@ title: Final Project
             <img src="../style/food.png" alt="Food" style="width:260px;height:190px;">
 	    
 	    <h2><strong><a name="Introduction"><span style="color: #DC143C">Introduction</span></a></strong></h2>
-	    	<p>The project on this page provides an overview of the final project we did for our class. This project is done by a group of 3 students: 
+	    	<p>This webpage provides an overview of the final project that we did for the STA 141B class. The contributors of this projects are:
 			<a href="https://github.com/stephanielamhiuman">Stephanie (Hiu Man) Lam, </a>
 			<a href="https://github.com/chloechen1995">Chloe (Jieyi) Chen, </a>
 			<a href="https://github.com/janetloyola">and Janet Loyola</a>
-		   <br> We divided our project into 4 parts, including data wrangling, anaylsis and vistualization, review analysis, and interactive user input.
-			At the end of this page, we will provides <a href="#Codes"><span style="color: #DC143C">links</span></a> to direct to the 4 parts of our project html where the codes could be seen.
+		    <br> We divided our project into 4 parts, which include data wrangling and anaylsis, vistualization, review analysis, and interactive user input.
+			At the end of this page, we will provide <a href="#Codes"><span style="color: #DC143C">links</span></a> to the Jupyter Notebooks where the codes locate.
 	    	</p>
-		<p> With our passion of traveling, we are interested in helping the others to discover the most outstanding places in California focusing on 
-	    		only 3 categories:
+		<p> With our passion of traveling, we are interested in helping visitors to create an ideal travel plan in California. Specifically, we will be focusing on only 3 categories:
 	    		<br><span style="color: #B22222"> - hotels, restaurants, and landmarks. </span>
 			<br>
-			<br>Our goal of the project is to provide a travel guide for California visitors by showing them the best hotels, restaurants, and landmarks with 
-			the applications of web data processing, interactive data vistualization, natural language processing, and interactive user input using Python.
+			<br>The Techniques that we use are web data processing, interactive data vistualization, natural language processing, and interactive user input using Python.
 	    	</p>
 	    	
 	    <h2><strong><a name="Data"><span style="color: #DC143C">I. Data Wrangling</span></a></strong></h2>
@@ -140,8 +138,7 @@ title: Final Project
  		</table>
 	    </small>
 	    <h2><strong><a name="Analysis"><span style="color: #DC143C">II. Analysis and Vistualization</span></a></strong></h2>
-		    <p> Since we want our users to be able to track the different categories for their own personal needs, we used interactive plots to give the 
-			    user a richer information experience.
+		    <p> Since we want our users to be able to keep track of the different categories that they might be interested in, we used interactive plots to provide a better user experience. 
 			</p>
 		<li><a href="#Restaurants">Restaurant</a></li>
 	    	<li><a href="#Hotels">Hotels</a></li>
@@ -227,8 +224,8 @@ title: Final Project
 
 
 	<h2><strong><a name="ReviewAnalysis"><span style="color: #DC143C">III. Review Analysis</span></a></strong></h2>
-	    <p>By using natural language processing, we analyzed the reviews from the Yelp API and find the common words that are used in the review by analyzing the best rated nearby restaurants, hotels, landmarks for all the cities in California. The results are shown below: </p>
-	
+	    <p>We used natural language processing to analyze the reviews from the Yelp API and find the common words that are used in the review by analyzing the best rated nearby restaurants, hotels and landmarks for all the cities in California. The results are shown below: </p>
+
 	    <p><span style="color: #FF5595"> For restaurants: </span></p>  
 		<img src="../style/part4_rest.png" alt="Number of counts of most occurring words in restaurants" style="width:304px;height:228px;">
 		<img src="../style/part4_restb.png" alt="Most commonly occurring words in restaurants" style="width:304px;height:228px;">
@@ -372,13 +369,119 @@ title: Final Project
  		</tbody>
 		    </table></small>
 	   
+<br>
+	   
+	    <small><strong>Sample Input: </strong></small>
+		<pre><code><strong>Are you satisfied with the results? </strong> no
+	    <br><strong>Ok, let's try again. </strong> 
+	    <br><strong>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks: </strong> restaurants
+	    <br><strong>What is your favorite kinds of food? </strong> japanese
+	    <br><strong>What is your preferred range of rating for restaurants?</strong> 3,5 </code></pre>
+	    <small><p><strong>Sample Ouput: </strong></p></small>
+	    <pre><code>You enter City: San Francisco, CA, Restaurant Category: Japanese, Lower_bound Rating: 1, Upper_bound Rating: 4 </code></pre>
+	   
+	    <small><table>
+     		<thead>
+  			<tr>
+  			  <th>categories</th>
+  			  <th>city</th>
+   			 <th>name</th>
+   			 <th>rating</th>
+   			 <th>review_count</th>
+   			 <th>snippet_text</th>
+  			  <th>url</th>
+  			</tr>
+		</thead>
+      		<tbody>
+
+  			<tr>
+    			<td>Japanese</td>
+    			<td>San Francisco, CA</td>
+    			<td>Kui Shin Bo</td>
+    			<td>4.0</td>
+    			<td>478</td>
+    			<td>At this point the wife and I have been out of ...</td>
+    			<td>https://www.yelp.com/biz/kui-shin-bo-san-franc...</td>
+ 			 </tr>
+			
+  			<tr>
+    			<td>Japanese</td>
+    			<td>San Francisco, CA</td>
+    			<td>OzaOza</td>
+    			<td>5.0</td>
+    			<td>31</td>
+    			<td>This was our first kaiseki experience and we a...</td>
+    			<td>https://www.yelp.com/biz/ozaoza-san-francisco?...</td>
+ 			 </tr>
+			
+ 		</tbody>
+		    </table></small>
+		<br>
+	    <small><strong>Sample Input: </strong></small>
+	    <pre><code><strong>Which accommondation do you want us to recommend? For example, restaurants, hotels or landmarks: </strong> hotels
+	    <br><strong>What is your favorite kinds of food? </strong> hotels
+	    <br><strong>What is your preferred range of rating for restaurants?</strong> 1,4 </code></pre>
+	    <small><p><strong>Sample Ouput: </strong></p></small>
+	    <pre><code>You enter City: San Francisco, CA, Restaurant Category: Hotels, Lower_bound Rating: 1, Upper_bound Rating: 4 </code></pre>
+	   
+	    <small><table>
+     		<thead>
+  			<tr>
+  			  <th>categories</th>
+  			  <th>city</th>
+   			 <th>name</th>
+   			 <th>rating</th>
+   			 <th>review_count</th>
+   			 <th>snippet_text</th>
+  			  <th>url</th>
+  			</tr>
+		</thead>
+      		<tbody>
+  			<tr>
+    			<td>Hotels</td>
+    			<td>San Francisco, CA</td>
+    			<td>Hotel Abri</td>
+    			<td>4.0</td>
+    			<td>273</td>
+    			<td>Love!\n\nEasy to book online, we arrived and t...</td>
+    			<td>https://www.yelp.com/biz/hotel-abri-san-franci...</td>
+ 			 </tr>
+
+  			<tr>
+    			<td>Hotels</td>
+    			<td>San Francisco, CA</td>
+    			<td>Union Hotel</td>
+    			<td>4.0</td>
+    			<td>25</td>
+    			<td>Ok. Here it goes: I visited San Francisco, and...</td>
+    			<td>https://www.yelp.com/biz/union-hotel-san-franc...</td>
+ 			 </tr>
+
+  			<tr>
+    			<td>Hotels</td>
+    			<td>San Francisco, CA</td>
+    			<td>Hotel Del Sol</td>
+    			<td>4.0</td>
+    			<td>120</td>
+    			<td>Pros:\n-super family friendly\n-kids loved the...</td>
+    			<td>https://www.yelp.com/biz/hotel-del-sol-san-fra...</td>
+ 			 </tr>
+			
+			
+ 		</tbody>
+		    </table></small>	   
 	    
-	    <br>
+<br>
+	   
+	    <small><strong>Sample Input: </strong></small>
+		<pre><code><strong>Are you satisfied with the results? </strong> Yes</code></pre>
+	    <small><p><strong>Sample Ouput: </strong></p></small>
+	    <pre><code>Thanks for using our system. We wish you have a wonderful trip.</code></pre>
+
 	    
 	<h2><strong><a name="Next Step"><span style="color: #DC143C">Conclusion & Next Step</span></a></strong></h2>
-	    <p>Our next step of our travel guide would be creating a server-side framework like flask to create a website that could actually get the user inputs and display corresponding 
-		    outputs and plots relative to whatever the users need.</p>
-		    
+	    <p> This travel guide has provided a comprehensive analysis for most restaurants, hotels and landmarks in California and make recommendations based on the users' preferences. Our next step will be creating a website that gets the user inputs displays the recommendations and plots. We will need to find a larger database that will contain more information and a web server that allows dynamic content. Furthermore, we will use this project as a template to create travel guides for other states as well. </p>
+		    		    
 	<h2><strong><a name="Codes"><span style="color: #DC143C">Code</span></a></strong></h2>
 	    <p>The links below are the html form of project jupyter notebooks, each file would include the codes and results that we used in the project. </p>    
 	    <ul>
