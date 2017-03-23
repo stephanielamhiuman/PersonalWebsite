@@ -2,18 +2,39 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FFFFFF">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../assets/css/stylesheet.css" media="screen">
-	  <style type="text/css">
-     	 .page-header {
-     	 background-image:url("../style/Galaxy-High-Definition-Wallpapers.jpg");
-    	  color: #FFFFFF;
-     	 }
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<style type="text/css">
+      .page-header {
+      background-image:url("../style/Galaxy-High-Definition-Wallpapers.jpg");
+      color: #FFFFFF;
+      }
     </style>
+    <style>
+	h1,h2,h3,h4 {
+ 		color: #DC143C;
+  		font-family: 'Lobster',cursive;
+	}
+
+	table {
+		font-family: arial, sans-serif;
+ 		border-collapse: collapse;
+  		width: 50%;
+	}
+
+	td, th {
+  		  border: 1px solid #dddddd;
+    		  text-align: left;
+   	 	  padding: 8px;
+ 		  height="1%";
+		}
+
+		tr:hover {background-color: #f5f5f5}
+		}
+	</style>
   </head>
 	
   <body>
